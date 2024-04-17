@@ -7,13 +7,13 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-]
-Data Collection and Data Processing
 
-[ ]
+#Data Collection and Data Processing
+
+
 #loading the dataset to a pandas Dataframe
 sonar_data = pd.read_csv('/content/sonar data.csv', header=None)
-[ ]
+
 sonar_data.head()
  
 # number of rows and columns
@@ -32,7 +32,7 @@ print(Y)
 
 Training and Test data
 
-[ ]
+ 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.1, stratify=Y, random_state=1)
 print(X.shape, X_train.shape, X_test.shape)
 print(X_train)
@@ -40,7 +40,7 @@ print(Y_train)
 
 Model Training --> Logistic Regression
 
-[ ]
+ 
 model = LogisticRegression()
 
 #training the Logistic Regression model with training data
